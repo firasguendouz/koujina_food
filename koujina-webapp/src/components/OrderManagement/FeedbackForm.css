@@ -1,0 +1,65 @@
+/* FeedbackForm.css */
+
+/* Root container */
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(149, 198, 199);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(27, 162, 181);
+  }
+  
+  /* Feedback rating items */
+  .feedback-form .feedback-rating {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Textarea styling */
+  .feedback-form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    border: 1px solid rgb(126, 183, 185);
+    border-radius: 6px;
+    font-size: 1rem;
+    color: rgb(85, 148, 152);
+    resize: vertical;
+    background-color: rgb(149, 198, 199);
+  }
+  
+  /* Submit button styling */
+  .feedback-form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(27, 162, 181);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-form button:hover {
+    background-color: rgb(108, 166, 169);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .feedback-form {
+      padding: 1.5rem;
+    }
+  
+    .feedback-form textarea {
+      font-size: 0.9rem;
+    }
+  
+    .feedback-form button {
+      font-size: 1rem;
+    }
+  }
+  

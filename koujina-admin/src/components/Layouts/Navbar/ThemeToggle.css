@@ -1,0 +1,88 @@
+/* Default light theme styles */
+:root[data-theme="light"] {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --button-background: #A5D3D3; /* Light teal */
+    --button-text-color: #333333;
+    --link-color: #1DA9BB; /* Vibrant turquoise for links */
+    --hover-color: #83B9BA; /* Soft cyan on hover */
+    --border-color: #dddddd;
+}
+
+/* Dark theme styles */
+:root[data-theme="dark"] {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --button-background: #355D5D; /* Muted teal */
+    --button-text-color: #ffffff;
+    --link-color: #A5D3D3; /* Light teal for links in dark mode */
+    --hover-color: #537F87; /* Muted teal on hover */
+    --border-color: #555555;
+}
+
+/* Apply theme variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme toggle button styling */
+.theme-toggle {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--hover-color);
+}
+
+/* Additional elements that adapt to theme */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+.theme-label {
+    margin-left: 8px;
+    font-size: 0.9rem;
+}
+
+/* Optional: Style for other components (e.g., cards, headers) */
+.card {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Button styling that aligns with theme */
+.button {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}

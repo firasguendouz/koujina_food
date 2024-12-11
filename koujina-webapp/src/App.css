@@ -1,0 +1,113 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url('./assets/ceramic.jpg');
+  display: flex;
+    flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+
+
+.navbar .navbar-logo img {
+  height: 48px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Responsive Order and Profile Management Styles */
+.order-management,
+.profile-management {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-card,
+.profile-field {
+  background-color: #e7f5f4; /* Light teal background */
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.order-card h3,
+.profile-field label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #355D5D;
+}
+
+.order-card p,
+.profile-field p {
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  .order-management,
+  .profile-management {
+    padding: 1rem;
+  }
+
+  .order-card h3,
+  .profile-field label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .navbar-logo img {
+    height: 40px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}

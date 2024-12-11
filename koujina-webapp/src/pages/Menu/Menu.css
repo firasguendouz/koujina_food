@@ -1,0 +1,94 @@
+.menu-container {
+  padding: 20px;
+  background-color: RGB(165, 211, 211); /* Light teal background */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: RGB(29, 169, 187); /* Vibrant turquoise for title */
+}
+
+.plate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.plate-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plate-box:hover {
+  transform: scale(1.03); /* Slight zoom on hover for interactivity */
+}
+
+.plate-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.plate-info {
+  margin-bottom: 15px;
+}
+
+.plate-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: RGB(53, 127, 135); /* Muted teal for plate name */
+}
+
+.plate-description {
+  color: #666;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.plate-price {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.add-to-basket-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: RGB(29, 169, 187); /* Vibrant turquoise for button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.add-to-basket-button:hover {
+  background-color: RGB(53, 127, 135); /* Muted teal on hover */
+}
+
+.add-to-basket-button svg {
+  margin-right: 5px;
+}
+.plate-disabled {
+  opacity: 0.6;
+  pointer-events: none; /* Prevent hover and click */
+}
+
+.add-to-basket-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

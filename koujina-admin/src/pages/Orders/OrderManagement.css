@@ -1,0 +1,71 @@
+/* OrderManagement.css */
+
+/* Root styles */
+.order-management {
+  max-width: 100%;
+  padding: 2rem 1.5rem;
+  background-color: rgb(149, 198, 199);
+  color: rgb(27, 162, 181);
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+.order-management h2 {
+  font-size: 2rem;
+  color: rgb(85, 148, 152);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Category buttons container */
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+.category-buttons button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(108, 166, 169);
+  background-color: rgb(126, 183, 185);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-buttons button.active,
+.category-buttons button:hover {
+  color: #fff;
+  background-color: rgb(27, 162, 181);
+}
+
+/* Spinner and Error Message */
+.loading-spinner,
+.order-management p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(85, 148, 152);
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .order-management h2 {
+    font-size: 1.8rem;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .category-buttons button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}

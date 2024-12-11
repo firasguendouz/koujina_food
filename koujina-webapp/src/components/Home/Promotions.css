@@ -1,0 +1,140 @@
+/* Root container for the promotions section */
+.promotions {
+  max-width: 1000px;
+  background-color: #A5D3D3; /* Light teal background */
+
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  color: rgb(27, 162, 181); /* Vibrant turquoise text */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.promotions:hover {
+  transform: scale(1.01); /* Slight scaling for interactivity */
+}
+
+/* Section title styling */
+.promotions h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: rgb(23, 61, 64); /* Darker teal for emphasis */
+  margin-bottom: 2rem;
+}
+
+/* Error message styling */
+.error {
+  font-size: 1rem;
+  color: #e74c3c; /* Red for errors */
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #e74c3c;
+  background-color: #fddede; /* Light red background for emphasis */
+  border-radius: 6px;
+}
+
+/* Loading message styling */
+.promotions p {
+  font-size: 1.1rem;
+  color: rgb(85, 148, 152); /* Medium teal */
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+/* Promotions container */
+.promotions-section {
+  margin-top: 1.5rem;
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  gap: 1.5rem; /* Larger gaps for better spacing */
+}
+
+/* Individual promotion item */
+.promotion-item {
+  flex: 0 1 calc(30% - 1rem); /* Slightly larger items for desktops */
+  background-color: rgb(126, 183, 185); /* Light teal background */
+  padding: 1.5rem;
+  
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promotion-item:hover {
+  transform: translateY(-7px); /* Higher lift for hover */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: rgb(98, 159, 162); /* Slightly darker teal */
+}
+
+/* Promotion image styling */
+.promotion-photo {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto; /* Maintain aspect ratio */
+  aspect-ratio: 4 / 3; /* Ensures all images are the same aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+
+  object-fit: cover; /* Ensure images crop appropriately */
+}
+
+/* Promotion text styling */
+.promotion-item span {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+
+  font-weight: bold;
+  color: rgb(53, 127, 135); /* Muted teal */
+  margin-top: 0.5rem;
+  display: block;
+  line-height: 1.4;
+}
+
+/* No promotions message */
+.promotions-section p {
+  font-size: 1.2rem;
+  color: rgb(85, 148, 152);
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .promotion-item {
+    flex: 0 1 calc(45% - 1rem); /* 2 items per row on medium screens */
+  }
+
+  .promotions h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .promotion-item {
+    flex: 0 1 calc(50% - 1rem); /* 2 items per row on tablets */
+  }
+
+  .promotions h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .promotion-item {
+    flex: 0 1 100%; /* 1 item per row on small screens */
+  }
+
+  .promotions h2 {
+    font-size: 1.6rem;
+  }
+
+  .promotions-section {
+    gap: 1rem;
+  }
+}

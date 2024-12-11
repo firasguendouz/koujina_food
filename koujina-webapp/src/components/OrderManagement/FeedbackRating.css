@@ -1,0 +1,55 @@
+/* FeedbackRating.css */
+
+/* Container for each rating section */
+.rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: rgb(85, 148, 152);
+  }
+  
+  /* Stars container */
+  .stars {
+    display: flex;
+    flex-direction: row-reverse; /* Display stars in reverse order */
+  }
+  
+  .stars input[type="radio"] {
+    display: none; /* Hide radio buttons */
+  }
+  
+  .stars label {
+    color: gray;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  /* Hover effect: fills the stars from left to right */
+  .stars label:hover,
+  .stars label:hover ~ label {
+    color: rgb(27, 162, 181); /* Filled color for hover */
+  }
+  
+  /* Checked effect: fills the stars based on selected rating */
+  .stars input[type="radio"]:checked ~ label {
+    color: gray;
+  }
+  
+  .stars input[type="radio"]:checked + label,
+  .stars input[type="radio"]:checked + label ~ label {
+    color: rgb(27, 162, 181); /* Filled color when selected */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .rating-container {
+      font-size: 0.9rem;
+    }
+    .stars label {
+      font-size: 1.3rem;
+    }
+  }
+  

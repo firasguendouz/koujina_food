@@ -1,0 +1,121 @@
+/* OrderCard.css */
+
+/* Root container */
+.order-card {
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(27, 162, 181);
+  }
+  
+  /* Header styling */
+  .order-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(85, 148, 152);
+  }
+  
+  .rp-points {
+    font-size: 1rem;
+    color: rgb(108, 166, 169);
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  /* Customer and order details */
+  .order-card p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: rgb(27, 162, 181);
+  }
+  
+  /* Order items styling */
+  .order-items {
+    margin-top: 1rem;
+  }
+  
+  .order-items h4 {
+    font-size: 1.2rem;
+    color: rgb(85, 148, 152);
+    margin-bottom: 0.5rem;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+    color: rgb(85, 148, 152);
+  }
+  
+  .order-item span {
+    font-size: 1rem;
+  }
+  
+  /* Order total and payment status */
+  .order-card .total-amount,
+  .order-card .payment-status {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* Address section */
+  .order-address {
+    margin-top: 1.5rem;
+  }
+  
+  .order-address h4 {
+    font-size: 1.2rem;
+    color: rgb(85, 148, 152);
+    margin-bottom: 0.5rem;
+  }
+  
+  .order-address p {
+    font-size: 1rem;
+  }
+  
+  /* Special instructions styling */
+  .special-instructions {
+    margin-top: 1rem;
+    font-style: italic;
+    color: rgb(108, 166, 169);
+  }
+  
+  /* Feedback section */
+  .feedback-section {
+    margin-top: 1.5rem;
+  }
+  
+  .feedback-section h4 {
+    font-size: 1.2rem;
+    color: rgb(85, 148, 152);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .order-card {
+      padding: 1.5rem;
+    }
+  
+    .order-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .order-items h4,
+    .order-address h4,
+    .feedback-section h4 {
+      font-size: 1.1rem;
+    }
+  
+    .order-item span {
+      font-size: 0.9rem;
+    }
+  
+    .order-card p,
+    .rp-points {
+      font-size: 0.9rem;
+    }
+  }
+  

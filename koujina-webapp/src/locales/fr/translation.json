@@ -1,0 +1,203 @@
+{
+  "home": {
+    "welcome": "Bienvenue à Koujina - Délices tunisiens traditionnels",
+    "register": "S'inscrire",
+    "orderNow": "Commander maintenant",
+    "profileTitle": "Votre profil",
+    "profileDescription": "Gérez vos informations, commandes et préférences.",
+    "editProfile": "Modifier le profil",
+    "availableDishesTitle": "Nos plats",
+    "todayspromotions": "Promotions du jour",
+    "Loadingpromotions": "Chargement des promotions...",
+    "aboutUsTitle": "À propos de nous",
+    "promotions": "Promotions",
+    "aboutUsDescription": "Koujina apporte des saveurs tunisiennes authentiques directement chez vous. Notre équipe est dédiée à préserver les recettes traditionnelles avec des ingrédients frais et de qualité.",
+    "whatWeCookTitle": "Ce que nous cuisinons",
+    "whatWeCookDescription": "Des salades vibrantes au couscous copieux, des briks savoureux au thé à la menthe rafraîchissant, nous offrons des plats tunisiens qui honorent notre héritage.",
+    "forWhomWeCookTitle": "Pour qui nous cuisinons",
+    "forWhomWeCookDescription": "Koujina est pour tous ceux qui veulent goûter les riches saveurs de la Tunisie. Que vous soyez tunisien vivant à l'étranger ou un passionné de cuisine, nos plats sont faits pour vous.",
+    "whoWithUsTitle": "Qui cuisine avec nous",
+    "whoWithUsDescription": "Nos talentueux chefs ont une passion pour la cuisine tunisienne. Chaque plat est une expérience authentique préparée avec soin."
+  },
+  "navbar": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "ordersManagement": "Gestion des commandes",
+    "notificationsManagement": "Notifications",
+    "profileManagement": "Profil",
+    "clearBasket": "Vider le panier"
+  },
+  "basket": {
+    "title": "Votre panier",
+    "items": {
+      "item1": "Article 1",
+      "item2": "Article 2"
+    },
+    "decreaseQuantity": "Diminuer la quantité",
+    "increaseQuantity": "Augmenter la quantité",
+    "removeItem": "Retirer l'article",
+    "clearBasket": "Vider le panier",
+    "empty": "Votre panier est vide.",
+    "total": "Total",
+    "goToPayment": "Procéder au paiement"
+  },
+  "orderSuccess": {
+    "title": "Commande réussie",
+    "orderDetails": "Détails de la commande",
+    "orderId": "Numéro de commande",
+    "recipient": "Destinataire",
+    "email": "E-mail",
+    "deliveryAddress": "Adresse de livraison",
+    "orderDate": "Date de commande",
+    "items": "Articles",
+    "totalAmount": "Montant total",
+    "paymentInfo": "Informations de paiement",
+    "paymentMethod": "Mode de paiement",
+    "paymentStatus": "Statut du paiement",
+    "unpaid": "Non payé",
+    "cash": "Espèces"
+  },
+  "languages": {
+    "en": "Anglais",
+    "ar": "Arabe",
+    "de": "Allemand",
+    "fr": "Français",
+    "en_flag": "🇬🇧",
+    "ar_flag": "🇹🇳",
+    "de_flag": "🇩🇪",
+    "fr_flag": "🇫🇷"
+  },
+  "footer": {
+    "privacyPolicy": "Politique de confidentialité",
+    "cookies": "Politique des cookies",
+    "legalMentions": "Mentions légales",
+    "copyright": "Tous droits réservés."
+  },
+  "auth": {
+    "verificationError": "Erreur de vérification",
+    "verifyPhone": "Vérifier le téléphone",
+    "registrationComplete": "Enregistrement terminé",
+    "phoneNumber": "Numéro de téléphone",
+    "verificationCode": "Code de vérification",
+    "login": "Se connecter",
+    "recoverPassword": "Récupérer le mot de passe",
+    "recoverPasswordButton": "Envoyer la demande de récupération",
+    "register": "S'inscrire",
+    "name": "Nom",
+    "email": "Email",
+    "password": "Mot de passe",
+    "loginButton": "Connexion",
+    "registerButton": "S'inscrire",
+    "error": "Échec de l'authentification. Veuillez réessayer.",
+    "loading": "Authentification en cours, veuillez patienter..."
+  },
+  "errorPage": {
+    "title": "404",
+    "message": "Page non trouvée",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "homeButton": "Aller à l'accueil"
+  },
+  "menu": {
+    "title": "Notre menu",
+    "loading": "Chargement des plats...",
+    "error": "Échec du chargement des plats. Veuillez réessayer plus tard.",
+    "addToBasket": "Ajouter au panier",
+    "defaultDescription": "Délicieux repas préparé avec soin",
+    "price": "€{{price}}"
+  },
+  "notifications": {
+    "title": "Gestion des notifications",
+    "noNotifications": "Aucune notification disponible."
+  },
+  "payment": {
+    "title": "Paiement",
+    "orderSummary": "Résumé de la commande",
+    "total": "Total",
+    "proceedToPayment": "Procéder au paiement",
+    "quantity": "Quantité",
+    "price": "Prix",
+    "payWithCash": "Payer en espèces",
+    "payWithCard": "Payer par carte",
+    "deliveryAddress": "Adresse de livraison",
+    "recipientName": "Nom",
+    "recipientPhone": "Téléphone",
+    "street": "Rue",
+    "city": "Ville",
+    "state": "État",
+    "postalCode": "Code postal",
+    "country": "Pays"
+  },
+  "orders": {
+    "title": "Gestion des commandes",
+    "orderId": "ID de la commande",
+    "customerName": "Nom du client",
+    "orderedAt": "Commandé à",
+    "items": "Articles",
+    "totalAmount": "Montant total",
+    "paymentStatus": "Statut du paiement",
+    "paymentMethod": "Méthode de paiement",
+    "deliveryAddress": "Adresse de livraison",
+    "specialInstructions": "Instructions spéciales",
+    "feedbackTitle": "Donner un avis",
+    "feedback": {
+      "deliveryTime": "Temps de livraison",
+      "taste": "Goût",
+      "presentation": "Présentation",
+      "notes": "Remarques supplémentaires",
+      "submit": "Envoyer un avis"
+    },
+    "status": {
+      "pending": "En attente",
+      "preparing": "En préparation",
+      "ready": "Prêt",
+      "outForDelivery": "En livraison",
+      "delivered": "Livré",
+      "cancelled": "Annulé",
+      "refunded": "Remboursé"
+    },
+    "paymentStatus": {
+      "paid": "Payé",
+      "unpaid": "Non payé",
+      "refunded": "Remboursé"
+    },
+    "paymentMethod": {
+      "cash": "Espèces",
+      "card": "Carte",
+      "stripe": "Stripe"
+    },
+    "rp": "Points de fidélité",
+    "noOrders": "Aucune commande trouvée.",
+    "error": "Erreur lors de la récupération des commandes.",
+    "loading": "Chargement des commandes...",
+    "feedbackSubmitted": "Avis envoyé avec succès !"
+  },
+  "profile": {
+    "title": "Gestion du profil",
+    "loading": "Chargement du profil...",
+    "error": {
+      "load": "Échec du chargement des données du profil.",
+      "update": "Échec de la mise à jour du profil. Veuillez réessayer."
+    },
+    "fields": {
+      "name": "Nom",
+      "email": "Email",
+      "contactNumber": "Numéro de contact",
+      "street": "Adresse",
+      "city": "Ville",
+      "state": "État",
+      "postalCode": "Code postal",
+      "country": "Pays",
+      "status": "Statut",
+      "loyaltyPoints": "Points de fidélité",
+      "role": "Rôle"
+    },
+    "buttons": {
+      "saveChanges": "Sauvegarder",
+      "cancel": "Annuler",
+      "editProfile": "Modifier le profil"
+    },
+    "addressNotProvided": "Non fourni"
+  }
+}

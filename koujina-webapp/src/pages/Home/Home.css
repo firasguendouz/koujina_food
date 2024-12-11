@@ -1,0 +1,37 @@
+/* Home.css */
+
+/* Root container */
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: rgb(27, 162, 181);
+    font-family: Arial, sans-serif;
+  }
+  
+
+  
+
+  
+
+  
+
+  
+ 
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .home {
+      padding: 1.5rem;
+    }
+  
+    .info-section h2,
+    .testimonial-carousel h2 {
+      font-size: 1.6rem;
+    }
+  
+    .info-section p {
+      font-size: 0.95rem;
+    }
+  }
+  

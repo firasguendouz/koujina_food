@@ -1,0 +1,89 @@
+/* OrderSuccess.css */
+
+.order-success {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(27, 162, 181); /* Vibrant turquoise */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.order-success h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(85, 148, 152); /* Medium teal */
+}
+
+.order-details, .order-items, .order-payment {
+    background-color: white;
+    border: 1px solid rgb(108, 166, 169); /* Muted teal */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.order-details h3, .order-items h3, .order-payment h3 {
+    color: rgb(85, 148, 152); /* Medium teal */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.order-details p, .order-items p, .order-payment p, .order-items li {
+    font-size: 1.1rem;
+    color: rgb(108, 166, 169); /* Muted teal */
+    margin: 5px 0;
+}
+
+.status-bar {
+    margin-top: 15px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.status-bar .progress {
+    height: 10px;
+    background-color: rgb(27, 162, 181); /* Vibrant turquoise */
+    width: 50%; /* Adjust this dynamically based on order status */
+    transition: width 0.5s ease-in-out;
+}
+
+.status-text {
+    font-size: 1rem;
+    color: rgb(108, 166, 169); /* Muted teal */
+    margin-top: 8px;
+    text-align: left;
+}
+
+.return-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(27, 162, 181); /* Vibrant turquoise */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.return-button:hover {
+    background-color: rgb(85, 148, 152); /* Medium teal */
+}
+
+.order-info-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-info-row .label {
+    font-weight: bold;
+    color: rgb(85, 148, 152); /* Medium teal */
+}

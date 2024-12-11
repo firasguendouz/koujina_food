@@ -1,0 +1,150 @@
+/* Payment.css */
+
+.payment {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.payment h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(27, 162, 181); /* Vibrant turquoise */
+}
+
+.payment-summary {
+    text-align: left;
+    border-top: 1px solid rgb(108, 166, 169); /* Muted teal */
+    padding-top: 20px;
+}
+
+.payment-method {
+    margin: 20px 0;
+    font-size: 1rem;
+    display: grid;
+    color: rgb(85, 148, 152); /* Medium teal for text */
+}
+
+.card-element {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgb(108, 166, 169); /* Muted teal border */
+    border-radius: 4px;
+    background-color: #f7f7f7;
+}
+
+.payment-button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(27, 162, 181); /* Vibrant turquoise button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-button:hover {
+    background-color: rgb(85, 148, 152); /* Darker teal on hover */
+}
+
+.payment-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid rgb(108, 166, 169); /* Muted teal border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.payment-item-details {
+    text-align: left;
+    flex: 1;
+    display: grid;
+    color: rgb(27, 162, 181); /* Vibrant turquoise for item names */
+}
+
+.payment-item-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgb(27, 162, 181);
+}
+
+.payment-item-description {
+    font-size: 0.9rem;
+    color: rgb(85, 148, 152); /* Medium teal for descriptions */
+    margin: 5px 0;
+}
+
+.payment-item-quantity,
+.payment-item-price {
+    font-size: 1rem;
+    color: rgb(108, 166, 169); /* Muted teal for quantity and price */
+}
+
+.payment-total {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(27, 162, 181); /* Vibrant turquoise for total */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-top: 1px solid rgb(108, 166, 169);
+    padding-top: 10px;
+}
+
+/* Delivery Address Section */
+.delivery-address {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(108, 166, 169); /* Muted teal */
+}
+
+.delivery-address h3 {
+    font-size: 1.5rem;
+    color: rgb(27, 162, 181); /* Vibrant turquoise */
+    margin-bottom: 10px;
+}
+
+.delivery-address label {
+    display: block;
+    font-size: 0.9rem;
+    color: rgb(85, 148, 152); /* Medium teal */
+    margin-top: 10px;
+}
+
+.delivery-address input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(108, 166, 169); /* Muted teal border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: rgb(27, 162, 181); /* Vibrant turquoise text */
+}
+
+.delivery-address input[type="text"]:focus {
+    outline: none;
+    border-color: rgb(27, 162, 181); /* Vibrant turquoise on focus */
+    box-shadow: 0 0 5px rgba(27, 162, 181, 0.3);
+}

@@ -1,0 +1,285 @@
+/* General styles */
+.hamburger-menu {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 100;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #355D5D; /* Muted teal */
+  cursor: pointer;
+}
+
+/* Overlay for when sidebar is open */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(53, 127, 135, 0.5); /* Muted teal with transparency */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 99;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -360px;
+  width: 280px;
+  height: 100%;
+  background-color: #355D5D; /* Muted teal */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  transition: left 0.3s ease;
+  z-index: 100;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Close button within sidebar */
+.close-sidebar {
+  align-self: flex-end;
+  font-size: 1.8rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+/* Sidebar content layout */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+/* Logo styling */
+.sidebar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #A5D3D3; /* Light teal */
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+/* Link styles */
+.sidebar-links a {
+  color: #fff;
+  padding: 12px 0;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.sidebar-links a:hover {
+  background-color: rgba(165, 211, 211, 0.1); /* Light teal on hover */
+  padding-left: 10px;
+}
+
+/* Utility buttons (theme, language, etc.) */
+.sidebar-utilities,
+.sidebar-profile,
+.basket-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.sidebar-utilities button,
+.profile-dropdown a {
+  background: transparent;
+  color: #A5D3D3; /* Light teal */
+  border: none;
+  font-size: 1rem;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar-utilities button:hover,
+.profile-dropdown a:hover {
+  background-color: rgba(165, 211, 211, 0.1); /* Light teal on hover */
+}
+
+/* Profile dropdown styling */
+.profile-dropdown {
+  background: #444;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.profile-dropdown a {
+  color: #A5D3D3; /* Light teal */
+  padding: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    font-size: 1.5rem;
+    top: 12px;
+    left: 12px;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .sidebar-logo {
+    font-size: 1.5rem;
+  }
+
+  .sidebar-links a,
+  .sidebar-utilities button,
+  .profile-dropdown a {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar-logo {
+    font-size: 1.3rem;
+  }
+
+  .sidebar-links a,
+  .sidebar-utilities button,
+  .profile-dropdown a {
+    font-size: 0.85rem;
+    padding: 6px 0;
+  }
+}
+
+/* Basket Dropdown on Right Side */
+.navbar-basket {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.basket-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 280px;
+  background-color: #A5D3D3; /* Light teal background */
+  border: 1px solid #83B9BA; /* Soft cyan border */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 90;
+}
+
+.navbar-logo img {
+  height: 64px;
+}
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.sidebar-logo {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+.lang{
+  background-color: transparent; /* Light teal background */
+position :absolute;
+right:0px;
+top: 75%;
+}
+
+/* Ceramic Stripe for Banner */
+.stripe {
+  background-color: #A5D3D3; /* Light teal background */
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+
+/* src/components/Navbar/Navbar.css */
+
+.basket-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.basket-count {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  background-color: #ff4d4d; 
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 20px;
+  text-align: center;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff; /* Background color to prevent transparency issues */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

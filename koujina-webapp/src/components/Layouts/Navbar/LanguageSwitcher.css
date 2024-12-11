@@ -1,0 +1,53 @@
+/* Language Switcher Styling */
+.language-switcher {
+    position: relative;
+}
+
+.language-button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #355D5D; /* Muted teal for the button text */
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #A5D3D3; /* Light teal for dropdown background */
+    border: 1px solid #83B9BA; /* Soft cyan border for subtle contrast */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    z-index: 10;
+}
+
+.language-dropdown button {
+    background: none;
+    border: none;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    text-align: left;
+    cursor: pointer;
+    color: #355D5D; /* Muted teal for button text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 3px;
+}
+
+.language-dropdown button:hover {
+    background-color: #83B9BA; /* Soft cyan for hover background */
+    color: #FFFFFF; /* White text on hover for contrast */
+}
+
+/* Accessibility Focus Styles */
+.language-dropdown button:focus {
+    outline: 2px solid #1DA9BB; /* Vibrant turquoise outline for accessibility */
+    background-color: #83B9BA; /* Match hover color */
+    color: #FFFFFF;
+}

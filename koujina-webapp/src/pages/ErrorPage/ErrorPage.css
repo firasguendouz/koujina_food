@@ -1,0 +1,42 @@
+/* Error Page Styles */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #A5D3D3; /* Light teal background for a soft look */
+    color: #333333; /* Dark text color for readability */
+}
+
+.error-page h1 {
+    font-size: 6rem;
+    color: #1DA9BB; /* Vibrant turquoise for the main error code */
+    margin-bottom: 0.5rem;
+}
+
+.error-page p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333333; /* Consistent dark text */
+}
+
+/* Home Button */
+.home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1DA9BB; /* Vibrant turquoise for CTA */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: #358787; /* Muted teal for subtle contrast on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover for effect */
+}

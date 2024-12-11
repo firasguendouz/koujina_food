@@ -1,0 +1,108 @@
+/* ProfileManagement.css */
+
+/* Root container for Profile Management */
+.profile-management {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgb(149, 198, 199); /* Light teal background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    color: rgb(27, 162, 181); /* Vibrant turquoise text */
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .profile-management h2 {
+    font-size: 2rem;
+    color: rgb(85, 148, 152); /* Medium teal */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Loading and error message containers */
+  .loading-spinner, .error-message {
+    margin: 1.5rem 0;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #e74c3c; /* Red color for error */
+    font-size: 0.9rem;
+    background-color: #f9d6d5;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #e74c3c;
+  }
+  
+  /* Button styling for edit/save/cancel actions */
+  .profile-management .edit-button,
+  .profile-management .save-button,
+  .profile-management .cancel-button {
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem auto;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(27, 162, 181); /* Vibrant turquoise */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Edit button hover effect */
+  .profile-management .edit-button:hover,
+  .profile-management .save-button:hover {
+    background-color: rgb(85, 148, 152); /* Darker teal on hover */
+  }
+  
+  /* Cancel button */
+  .profile-management .cancel-button {
+    background-color: transparent;
+    color: rgb(27, 162, 181);
+    border: 1px solid rgb(27, 162, 181);
+  }
+  
+  .profile-management .cancel-button:hover {
+    background-color: rgb(27, 162, 181);
+    color: #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .profile-management {
+      padding: 1.5rem;
+    }
+  
+    .profile-management h2 {
+      font-size: 1.8rem;
+    }
+  
+    .profile-management .edit-button,
+    .profile-management .save-button,
+    .profile-management .cancel-button {
+      padding: 0.65rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-management {
+      padding: 1rem;
+    }
+  
+    .profile-management h2 {
+      font-size: 1.6rem;
+    }
+  
+    .profile-management .edit-button,
+    .profile-management .save-button,
+    .profile-management .cancel-button {
+      padding: 0.6rem;
+      font-size: 0.85rem;
+      width: 100%;
+    }
+  }
+  

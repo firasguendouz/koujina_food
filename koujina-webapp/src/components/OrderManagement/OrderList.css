@@ -1,0 +1,23 @@
+/* OrderList.css */
+
+/* Root container */
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    background-color: rgb(149, 198, 199);
+  }
+  
+  /* Adjustments for individual OrderCard */
+  .order-list .order-card {
+    margin: 0 auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .order-list {
+      padding: 1rem;
+    }
+  }
+  

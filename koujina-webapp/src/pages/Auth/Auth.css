@@ -1,0 +1,129 @@
+/* Auth.css */
+
+/* Root container for the auth page */
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: rgb(149, 198, 199); /* Light teal background */
+    position: relative;
+  }
+  
+  /* Rotating image styling */
+  .rotating-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    animation: rotate 5s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Main auth container styling */
+  .auth-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Tabs container */
+  .auth-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Individual tab button styling */
+  .auth-tab {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(27, 162, 181); /* Vibrant turquoise */
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .auth-tab.active {
+    color: rgb(85, 148, 152); /* Darker teal for active tab */
+    border-bottom: 2px solid rgb(85, 148, 152);
+  }
+  
+  .auth-tab:hover {
+    color: rgb(85, 148, 152);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .auth-container {
+      padding: 1.5rem;
+    }
+  
+    .auth-tab {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+    }
+  
+    .rotating-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .auth-page {
+      padding: 1rem;
+    }
+  
+    .auth-container {
+      padding: 1rem;
+    }
+  
+    .auth-tab {
+      font-size: 0.85rem;
+    }
+  
+    .rotating-image {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+
+/* Rotating Image Style */
+.rotating-image {
+    position: absolute;
+    top: 10%; /* Adjust this value as needed */
+    transform: translateX(-50%);
+    width: 100px; /* Adjust size */
+    height: 100px; /* Adjust size */
+    animation: rotate 20s linear infinite;
+    z-index: 1;
+}
+
+/* Animation for rotating the image */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

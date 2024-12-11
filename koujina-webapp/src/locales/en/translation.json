@@ -1,0 +1,221 @@
+{
+    "home": {
+      "welcome": "Welcome to Koujina - Traditional Tunisian Delights",
+      "register": "Register",
+      "orderNow": "Order Now",
+      "profileTitle": "Your Profile",
+      "profileDescription": "Manage your details, orders, and preferences.",
+      "editProfile": "Edit Profile",
+      "availableDishesTitle":"Our Dishes",
+      "todayspromotions": "Todays's Promotions",
+      "Loadingpromotions":"Loading promotions ...",
+      "aboutUsTitle": "About Us",
+      "promotions": "Promotions",
+      "aboutUsDescription": "Koujina brings authentic Tunisian flavors right to your doorstep. Our team is dedicated to preserving traditional recipes, crafted with love and fresh ingredients by skilled chefs. Experience the unique and rich flavors of Tunisia from the comfort of your home.",
+  
+      "whatWeCookTitle": "What We Cook",
+      "whatWeCookDescription": "From vibrant salads to hearty couscous, from mouth-watering briks to refreshing mint tea, we offer a variety of Tunisian dishes that honor the flavors of our heritage. Every meal is a celebration of Tunisia’s culinary diversity, made with authentic ingredients.",
+  
+      "forWhomWeCookTitle": "For Whom We Cook",
+      "forWhomWeCookDescription": "Koujina is for anyone who wants to taste the rich flavors of Tunisia. Whether you're a Tunisian living abroad, an adventurous foodie, or someone discovering Tunisian cuisine for the first time, our dishes are made for you.",
+  
+      "whoWithUsTitle": "Who Cooks With Us",
+      "whoWithUsDescription": "Our talented chefs have a passion for Tunisian cuisine, and each one brings a unique touch to the dishes they create. They use traditional techniques to ensure each meal is both authentic and unforgettable. Meet the chefs who make Koujina special."
+    },
+    "navbar": {
+    "home": "Home",
+    "menu": "Menu",
+    "login": "Login",
+    "logout": "Logout",
+    "ordersManagement": "Orders Management",
+    "notificationsManagement": "Notifications",
+    "profileManagement": "Profile",
+    "clearBasket": "Clear Basket"
+  },
+  "basket": {
+    "title": "Your Basket",
+    "items": {
+      "item1": "Item 1",
+      "item2": "Item 2"
+    },
+    "decreaseQuantity": "Decrease Quantity",
+    "increaseQuantity": "Increase Quantity",
+    "removeItem": "Remove Item",
+    "clearBasket": "Clear Basket",
+    "empty": "Your basket is empty.",
+    "total": "Total",
+    "goToPayment": "Proceed to Payment"
+  },
+  "languages": {
+    "en": "English",
+    "ar": "Arabic",
+    "de": "German",
+    "fr": "French",
+    "en_flag": "🇬🇧",
+    "ar_flag": "🇹🇳",
+    "de_flag": "🇩🇪",
+    "fr_flag": "🇫🇷"
+  },
+  "orderSuccess": {
+    "title": "Order Successful",
+    "orderDetails": "Order Details",
+    "orderId": "Order ID",
+    "recipient": "Recipient",
+    "email": "Email",
+    "deliveryAddress": "Delivery Address",
+    "orderDate": "Order Date",
+    "items": "Items",
+    "totalAmount": "Total Amount",
+    "paymentInfo": "Payment Information",
+    "paymentMethod": "Payment Method",
+    "paymentStatus": "Payment Status",
+    "unpaid": "Unpaid", 
+    "cash": "Cash"
+  },
+  "footer": {
+    "privacyPolicy": "Privacy Policy",
+    "cookies": "Cookies Policy",
+    "legalMentions": "Legal Mentions",
+    "copyright": "All rights reserved."
+  },
+  "auth": {
+    "login": "Login",
+    "verificationError":"Verification Error",
+    "verifyPhone":"Verify Phone",
+    "registrationComplete":"Registration Complete",
+    "phoneNumber":"Phone Number",
+    "verificationCode":"Verification Code",
+    "recoverPassword":"Recover Password",
+    "recoverPasswordButton":"Send recovery request",
+    "register": "Register",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Login",
+    "registerButton": "Register",
+    "error": "Authentication failed. Please try again.",
+    "loading": "Authenticating, please wait..."
+  },
+  "errorPage": {
+    "title": "404",
+    "message": "Page Not Found",
+    "description": "Sorry, the page you’re looking for doesn’t exist or may have been moved.",
+    "homeButton": "Go to Homepage"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "loading": "Loading plates...",
+    "error": "Failed to load plates. Please try again later.",
+    "addToBasket": "Add to Basket",
+    "defaultDescription": "Delicious food made fresh",
+    "price": "€{{price}}"
+  },
+  "notifications": {
+    "title": "Notification Management",
+    "noNotifications": "No notifications available."
+  },
+  "payment": {
+    "title": "Payment",
+    "orderSummary": "Order Summary",
+    "total": "Total",
+    "proceedToPayment": "Proceed to Payment",
+    "quantity":"quantity",
+    "price":"price",
+    "payWithCash":"payWithCash",
+    "payWithCard":"payWithCard",
+    "deliveryAddress":"Delivery Address",
+    "recipientName":"Name",
+    "recipientPhone":"Phone",
+    "street":"Street",
+    "city":"City",
+    "state":"State",
+    "postalCode":"Postal Code",
+    "country":"Country"
+  },
+  "orders": {
+    "recipientName" :"Recipient Name" ,
+    "recipientPhone" : "Phone" ,
+    "title": "Order Management",
+    "orderId": "Order ID",
+    "customerName": "Customer Name",
+    "orderedAt": "Ordered At",
+    "items": "Items",
+    "actualDeliveries":"Actual Orders",
+    "fetchError":"No Orders Found",
+    "orderHistory":"Orders History",
+    "totalAmount": "Total Amount",
+    "paymentStatus": "Payment",
+    "paymentMethod": "Payment",
+    "deliveryAddress": "Delivery Address",
+    "specialInstructions": "Special Instructions",
+    "feedbackTitle": "Provide Feedback",
+    "feedback": {
+      "deliveryTime": "Delivery Time",
+      "taste": "Taste",
+      "presentation": "Presentation",
+      "notes": "Additional Notes",
+      "submit": "Submit Feedback"
+    },
+    "status": {
+      "pending": "Pending",
+      "preparing": "Preparing",
+      "ready": "Ready",
+      "outForDelivery": "Out for Delivery",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled",
+      "refunded": "Refunded"
+    },
+    "paymentStatus": {
+      "paid": "Paid",
+      "unpaid": "Unpaid",
+      "refunded": "Refunded"
+    },
+    "paymentMethod": {
+      "cash": "Cash",
+      "card": "Card",
+      "stripe": "Stripe"
+    },
+    "rp": "Reward Points",
+    "noOrders": "No orders found.",
+    "error": "Error fetching orders.",
+    "loading": "Loading orders...",
+    "feedbackSubmitted": "Feedback submitted successfully!"
+  },
+  "menu": {
+    "title": "Menu",
+    "loading": "Loading menu...",
+    "error": "Error loading menu.",
+    "defaultDescription": "Delicious dish prepared with love.",
+    "addToBasket": "Add to Basket",
+    "price": "€{{price}}"
+  },
+  "profile": {
+    "title": "Profile Management",
+    "loading": "Loading profile...",
+    "error": {
+      "load": "Failed to load profile data.",
+      "update": "Failed to update profile. Please try again."
+    },
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "contactNumber": "Contact Number",
+      "street": "Street Address",
+      "city": "City",
+      "state": "State",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "status":"Status",
+      "loyaltyPoints":"Loyalty Points",
+      "role":"Role"
+    },
+    "buttons": {
+      "saveChanges": "Save Changes",
+      "cancel": "Cancel",
+      "editProfile": "Edit Profile"
+    },
+    "addressNotProvided": "Not provided"
+  }
+  }
+
+  

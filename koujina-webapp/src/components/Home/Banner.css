@@ -1,0 +1,57 @@
+/* Banner.css */
+
+/* Root container */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+    background-color: rgb(126, 183, 185);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  /* Banner buttons container */
+  .banner-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Individual button styling */
+  .banner-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(27, 162, 181);
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .banner-button:hover {
+    background-color: rgb(108, 166, 169);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .banner {
+      padding: 2rem 1rem;
+    }
+  
+    .banner-button {
+      font-size: 1rem;
+      padding: 0.7rem 1.2rem;
+    }
+  
+    .banner-buttons {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
